@@ -1,0 +1,88 @@
+\hypertarget{classmodelo_1_1_usuario}{}\section{modelo.\+Usuario Class Reference}
+\label{classmodelo_1_1_usuario}\index{modelo.\+Usuario@{modelo.\+Usuario}}
+Inheritance diagram for modelo.\+Usuario\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodelo_1_1_usuario}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a6070de92838a506458ccd85e4ba64256}\label{classmodelo_1_1_usuario_a6070de92838a506458ccd85e4ba64256}} 
+{\bfseries Usuario} (int id, String nombre, String apellido, String correo, String fecha, Buffered\+Image avatar, double experiencia, String username)
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_afd9614ab19dbc8d9a63339ba48003519}\label{classmodelo_1_1_usuario_afd9614ab19dbc8d9a63339ba48003519}} 
+String {\bfseries get\+Username} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a557ba08b1e96354700e86cb2e4a85ebd}\label{classmodelo_1_1_usuario_a557ba08b1e96354700e86cb2e4a85ebd}} 
+void {\bfseries obtener\+Reciompensa} (int recompensa)
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a4f39aac4804e1990385f747e0286c085}\label{classmodelo_1_1_usuario_a4f39aac4804e1990385f747e0286c085}} 
+List$<$ \mbox{\hyperlink{classmodelo_1_1_usuario}{Usuario}} $>$ {\bfseries ver\+Seguidores} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a207d20ba99d17f964133d0b5ff9dd26d}\label{classmodelo_1_1_usuario_a207d20ba99d17f964133d0b5ff9dd26d}} 
+void {\bfseries seguidores} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_acb3327a5d6ca0689910aa78823643f13}\label{classmodelo_1_1_usuario_acb3327a5d6ca0689910aa78823643f13}} 
+void {\bfseries ver\+Usuario} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a9b718abb70162e2267dac63871339a91}\label{classmodelo_1_1_usuario_a9b718abb70162e2267dac63871339a91}} 
+int {\bfseries get\+Id} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_ac0420f9e34ab2d3ca5334444ae7d9ee9}\label{classmodelo_1_1_usuario_ac0420f9e34ab2d3ca5334444ae7d9ee9}} 
+String {\bfseries get\+Nombre} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a736af6115a71cba37b4a87ae3430994f}\label{classmodelo_1_1_usuario_a736af6115a71cba37b4a87ae3430994f}} 
+String {\bfseries get\+Apellido} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a846c5ccf22a065fda68b6e69b02c1124}\label{classmodelo_1_1_usuario_a846c5ccf22a065fda68b6e69b02c1124}} 
+String {\bfseries get\+Correo} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a53b65f7ac848e7bb2c95e55afc019a8b}\label{classmodelo_1_1_usuario_a53b65f7ac848e7bb2c95e55afc019a8b}} 
+String {\bfseries get\+Fecha} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a914cdcd3dde8caf9dc05dbdad149d442}\label{classmodelo_1_1_usuario_a914cdcd3dde8caf9dc05dbdad149d442}} 
+Buffered\+Image {\bfseries get\+Avatar} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a2e22270ab079a28f765c652d46620fdd}\label{classmodelo_1_1_usuario_a2e22270ab079a28f765c652d46620fdd}} 
+double {\bfseries get\+Experiencia} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a74dd866bd4b30e971af4488672eff042}\label{classmodelo_1_1_usuario_a74dd866bd4b30e971af4488672eff042}} 
+int {\bfseries get\+Nivel} ()
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_af26b4b82bc86a2a3d41fdd722da0a2c3}\label{classmodelo_1_1_usuario_af26b4b82bc86a2a3d41fdd722da0a2c3}} 
+double {\bfseries get\+Experiencia\+Nivel\+Actual} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a613c5b0151db527d6fe2366734e6771e}\label{classmodelo_1_1_usuario_a613c5b0151db527d6fe2366734e6771e}} 
+static \mbox{\hyperlink{classmodelo_1_1_usuario}{Usuario}} {\bfseries autentificarse} (String user, String passw)
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_afe6b558d3e9170ce7948098ab68de905}\label{classmodelo_1_1_usuario_afe6b558d3e9170ce7948098ab68de905}} 
+static void {\bfseries crear\+Usuario} (String username, String nombre, String apellido, String correo, String pass)
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a0ec21010c2d3c4bc3061cb9d879ccaf8}\label{classmodelo_1_1_usuario_a0ec21010c2d3c4bc3061cb9d879ccaf8}} 
+static void {\bfseries seguir} (int seguidor, int segido)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a19af904ce3274c36fe7dc32a5a9e924c}\label{classmodelo_1_1_usuario_a19af904ce3274c36fe7dc32a5a9e924c}} 
+static void {\bfseries verificar\+Usuario} (String \mbox{[}$\,$\mbox{]} datos)
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a106897c3e42a861c5c90664c7907df9f}\label{classmodelo_1_1_usuario_a106897c3e42a861c5c90664c7907df9f}} 
+static \mbox{\hyperlink{classmodelo_1_1_usuario}{Usuario}} {\bfseries obtener\+Usuario\+Id} (int id)
+\item 
+\mbox{\Hypertarget{classmodelo_1_1_usuario_a4d1eaceea4954ca89fd870cd894c230c}\label{classmodelo_1_1_usuario_a4d1eaceea4954ca89fd870cd894c230c}} 
+static List$<$ \mbox{\hyperlink{classmodelo_1_1_usuario}{Usuario}} $>$ {\bfseries obtener\+Usuarios} (String username)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+HW 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Escritorio/\+Clase/20172018/\+Eclipse Workspace/\+Picturasic/src/modelo/Usuario.\+java\end{DoxyCompactItemize}
