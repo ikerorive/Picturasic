@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="picturazic1.ParticiparController">
+   <children>
+      <HBox>
+         <children>
+            <Label contentDisplay="CENTER" fx:id="tituloT"  style="-fx-font-weight: 900; -fx-font-size: 25;" text="Particiapr en reto." textFill="#0066ff">
+               <graphic>
+                  <ImageView fx:id="titulo" fitHeight="200.0" fitWidth="400.0" opacity="0.52" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/9.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <HBox style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="descripcion" prefHeight="50.0" style="-fx-font-weight: 700;" text="Adds the specified (signed) amount of time to the given time field, based on the calendar's rules" textAlignment="CENTER" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" onMouseClicked="#escigerImagen" prefWidth="400.0" style="-fx-background-radius: 0; -fx-background-color: #e6e6e6;">
+               <graphic>
+                  <ImageView fx:id="mostrarMiFoto" fitHeight="94.0" fitWidth="78.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-compact-camera-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="70.0" top="70.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <JFXButton contentDisplay="TOP" onMouseClicked="#subirFoto" prefWidth="200.0" style="-fx-background-radius: 0; -fx-background-color: #fff;" text="Subir">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-upload-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onMouseClicked="#cancelarReto" prefWidth="200.0" style="-fx-background-color: #ff5c33; -fx-background-radius: 0;" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-delete-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

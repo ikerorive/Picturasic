@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/jssc.jar"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/mail.jar"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/zxing-1.7-javase.jar"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/zxing-core-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/jfoenix-8.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Escritorio/Clase/Eclipse Workspace/Picturasic/lib/mysql-connector-java-5.1.46.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

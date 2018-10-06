@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxWidth="360.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="picturazic1.RetoController">
+   <children>
+      <VBox style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-goal-filled-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Titulo" prefHeight="17.0" prefWidth="279.0" style="-fx-font-weight: 900;" text="Saca tu primera foto Saca Saca tu primera fototu primera foto" />
+               </children>
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox maxWidth="400.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="descripcion" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" textAlignment="JUSTIFY" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0" maxWidth="400.0">
+               <children>
+                  <JFXButton onMouseClicked="#participar" prefHeight="25.0" prefWidth="400.0" style="-fx-background-color: #b3c6ff; -fx-background-radius: 0;" text="Ver" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

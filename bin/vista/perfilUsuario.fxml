@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="720.0" minHeight="-Infinity" minWidth="360.0" prefWidth="360.0" style="-fx-background-color: #3399ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="picturazic1.PerfilController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <Label prefWidth="320.0" style="-fx-font-weight: 700; -fx-font-size: 15;" text="Progreso" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <ProgressBar fx:id="barraProgreso" prefHeight="18.0" prefWidth="320.0" progress="0.82" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="avatar" fitHeight="250.0" fitWidth="320.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/pexels-photo-415829.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label fx:id="Usuraio" style="-fx-font-size: 18; -fx-font-weight: 900;" text="Username" textFill="WHITE" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <JFXButton contentDisplay="TOP" fx:id="seguidores" onMouseClicked="#verSeguidores" prefWidth="120.0" text="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-account-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="fotos" onMouseClicked="#verUsuario" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefWidth="120.0" text="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-compact-camera-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="botonNivel" contentDisplay="TOP" layoutX="130.0" layoutY="10.0" prefWidth="120.0" text="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-no-connection-filled-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+         </children></HBox>
+         <HBox alignment="CENTER">
+             <children>
+                 <JFXButton contentDisplay="TOP" fx:id="seguir" onMouseClicked="#seguirUsuario" prefWidth="120.0" text="Seguir usuario">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/icons8-add-user-male-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+             </children>
+         </HBox>
+   </children>
+</VBox>

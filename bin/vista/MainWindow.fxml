@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="picturazic1.ControladorPrincipal">
+   <children>
+      <BorderPane layoutX="33.0" layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="299.0" prefWidth="313.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefWidth="200.0" style="-fx-background-color: #333;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <VBox.margin>
+                        <Insets top="0.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton fx:id="mostrarHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0" prefWidth="200.0" text="Picturazia" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-home-filled-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton fx:id="mostrar" onMouseClicked="#iker" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0" prefWidth="200.0" text="Picturazia" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-home-filled-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="60.0">
+                     <children>
+                        <JFXButton fx:id="mostrarRetos" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0" prefWidth="200.0" text="Retos" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-goal-filled-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="474.0">
+                     <children>
+                        <JFXButton fx:id="verPopulares" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0" prefWidth="200.0" text="Fotos populares" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-fire-60.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <ImageView fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-home-filled-50.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label style="-fx-font-weight: 900; -fx-font-size: 15px;" text="Picturazia" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" top="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/picturasic%20logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-weight: 900; -fx-font-size: 20;" text="Picturasic" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <JFXTextField fx:id="buscador" labelFloat="true" promptText="search">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton fx:id="mostrarPerfil" onMouseClicked="#buscarUsuario" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" style="-fx-cursor: hand;" text="serch">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/icons8-search-48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-account-80.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="usuarioTop" onMouseClicked="#visualizarUsuarioLocal" style="-fx-font-weight: 900; -fx-cursor: hand;" text="El Normal" />
+                              <ImageView fitWidth="15.0" layoutX="502.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-down-button-50.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane fx:id="panelVisualizador" minHeight="0.0" minWidth="450.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fx:id="panelScroll" layoutX="103.0" layoutY="105.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane fx:id="panelReferencia" minHeight="0.0" minWidth="370.0" prefWidth="1100.0" style="-fx-background-color: #ccc;">
+                           <children>
+                              <FlowPane fx:id="panelContenedor" alignment="TOP_CENTER" hgap="10.0" minWidth="370.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox prefWidth="400.0" style="-fx-background-color: #fff;">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons8-account-80.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label style="-fx-font-size: 14; -fx-font-weight: 700; -fx-text-fill: #333;" text="Usuario0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #595959;">
+                                             <children>
+                                                <Label prefHeight="35.0" style="-fx-font-size: 11; -fx-font-weight: 700; -fx-text-fill: #fff;" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../img/0.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="110.0" prefWidth="350.0">
+                                             <children>
+                                                <JFXButton buttonType="RAISED" contentDisplay="TOP" graphicTextGap="0.0" style="-fx-background-color: #ff6666;" text="25">
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@../img/icons8-heart-outline-64(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <JFXButton fx:id="AAA" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="0.0" style="-fx-background-color: #ff6666;" text="25">
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@../img/icons8-heart-outline-64(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label prefHeight="58.0" prefWidth="334.0" text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself," wrapText="true" HBox.hgrow="ALWAYS">
+                                                   <padding>
+                                                      <Insets bottom="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="30.0" layoutY="30.0" prefWidth="400.0" style="-fx-background-color: #fff;">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons8-account-80.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label style="-fx-font-size: 14; -fx-font-weight: 700; -fx-text-fill: #333;" text="Usuario0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #595959;">
+                                             <children>
+                                                <Label prefHeight="35.0" style="-fx-font-size: 11; -fx-font-weight: 700; -fx-text-fill: #fff;" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../img/0.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="110.0" prefWidth="350.0">
+                                             <children>
+                                                <JFXButton buttonType="RAISED" contentDisplay="TOP" graphicTextGap="0.0" style="-fx-background-color: #ff6666;" text="25">
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@../img/icons8-heart-outline-64(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label prefHeight="58.0" prefWidth="334.0" text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself," wrapText="true" HBox.hgrow="ALWAYS">
+                                                   <padding>
+                                                      <Insets bottom="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="450.0" layoutY="30.0" prefWidth="400.0" style="-fx-background-color: #fff;">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons8-account-80.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label style="-fx-font-size: 14; -fx-font-weight: 700; -fx-text-fill: #333;" text="Usuario0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #595959;">
+                                             <children>
+                                                <Label prefHeight="35.0" style="-fx-font-size: 11; -fx-font-weight: 700; -fx-text-fill: #fff;" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../img/0.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="110.0" prefWidth="350.0">
+                                             <children>
+                                                <JFXButton buttonType="RAISED" contentDisplay="TOP" graphicTextGap="0.0" style="-fx-background-color: #ff6666;" text="25">
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@../img/icons8-heart-outline-64(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label prefHeight="58.0" prefWidth="334.0" text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself," wrapText="true" HBox.hgrow="ALWAYS">
+                                                   <padding>
+                                                      <Insets bottom="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="30.0" layoutY="30.0" prefWidth="400.0" style="-fx-background-color: #fff;">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/icons8-account-80.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label style="-fx-font-size: 14; -fx-font-weight: 700; -fx-text-fill: #333;" text="Usuario0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #595959;">
+                                             <children>
+                                                <Label prefHeight="35.0" style="-fx-font-size: 11; -fx-font-weight: 700; -fx-text-fill: #fff;" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../img/0.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="110.0" prefWidth="350.0">
+                                             <children>
+                                                <JFXButton buttonType="RAISED" contentDisplay="TOP" graphicTextGap="0.0" style="-fx-background-color: #ff6666;" text="25">
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@../img/icons8-heart-outline-64(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label prefHeight="58.0" prefWidth="334.0" text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself," wrapText="true" HBox.hgrow="ALWAYS">
+                                                   <padding>
+                                                      <Insets bottom="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" top="20.0" />
+                                 </padding>
+                              </FlowPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

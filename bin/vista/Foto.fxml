@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="360.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="picturazic1.FotoController">
+   <children>
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="username" buttonType="RAISED" onMouseClicked="#verUsuario" prefWidth="400.0" style="-fx-background-radius: 0; -fx-font-weight: 900;" text="UsuarioArio0">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+         <children>
+            <ImageView fx:id="imagen" fitHeight="250.0" fitWidth="360.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/5.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="45.0" style="-fx-background-color: #333;">
+         <children>
+            <Label fx:id="retoDesc" maxHeight="50.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" textFill="WHITE" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="295.0">
+         <children>
+            <HBox alignment="CENTER" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="likeButton" contentDisplay="TOP" graphicTextGap="3.0" onMouseClicked="#megusta" prefWidth="200.0" style="-fx-background-color: #ff3300; -fx-background-radius: 0;" text="Like">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../img/icons8-heart-outline-64(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            
+         </children>
+      </HBox>
+   </children>
+</VBox>
