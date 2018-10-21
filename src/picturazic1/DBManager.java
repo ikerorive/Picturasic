@@ -8,6 +8,7 @@ package picturazic1;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Collections;
 
 /**
  *
@@ -31,7 +32,10 @@ public class DBManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return connection;
+		
+			return connection;	
+		
+		
 	}
 
 }
