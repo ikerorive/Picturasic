@@ -31,7 +31,9 @@ import picturazic1.DBManager;
  * @author HW
  */
 public class FuncionesFoto {
-	private static final Logger LOGGER = Logger.getLogger( "FuncionesFoto" );
+	private static final Logger LOGGER = Logger.getLogger("FuncionesFoto");
+	public static String retoId = "retoid";
+
 	public static List<Foto> getFotosUsuario(int idUsuario) {
 
 		Connection connection = null;
@@ -52,15 +54,14 @@ public class FuncionesFoto {
 				System.out.println(resultSet.getInt("fotoid"));
 				System.out.println(resultSet.getString("descripcion"));
 				System.out.println(resultSet.getString("autor"));
-				System.out.println(resultSet.getString("retoId"));
+				System.out.println(resultSet.getString(retoId));
 				System.out.println("-------------------------------");
-				// System.out.println(resultSet.getString("foto"));
-				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt("retoid"), image,
+				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt(retoId), image,
 						resultSet.getInt("autor")));
- 
+
 			}
 		} catch (Exception e) {
-			LOGGER.log( Level.FINE, e.toString());
+			LOGGER.log(Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
@@ -105,13 +106,13 @@ public class FuncionesFoto {
 				System.out.println(resultSet.getString("autor"));
 				System.out.println(resultSet.getString("retoId"));
 				System.out.println("-------------------------------");
-				// System.out.println(resultSet.getString("foto"));
-				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt("retoid"), image,
+
+				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt(retoId), image,
 						resultSet.getInt("autor")));
 
 			}
 		} catch (Exception e) {
-			LOGGER.log( Level.FINE, e.toString());
+			LOGGER.log(Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
@@ -147,12 +148,12 @@ public class FuncionesFoto {
 			resultSet = statement.executeQuery(selectSql);
 			// solo devuelve la primera
 			while (resultSet.next()) {
-				// System.out.println(resultSet.getString("foto"));
+				
 				l = resultSet.getString("likes");
 
 			}
 		} catch (Exception e) {
-			LOGGER.log( Level.FINE, e.toString());
+			LOGGER.log(Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
@@ -198,7 +199,7 @@ public class FuncionesFoto {
 			try {
 				if (connection != null) {
 					connection.close();
-					// statement.close();
+				
 				}
 			} catch (SQLException e) {
 				System.out.println("SQLException Finally: - " + e);
@@ -208,16 +209,16 @@ public class FuncionesFoto {
 					statement.close();
 				}
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				LOGGER.log( Level.FINE, e.toString());
+
+				LOGGER.log(Level.FINE, e.toString());
 			}
 			try {
 				if (inputStream != null) {
 					inputStream.close();
 				}
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				LOGGER.log( Level.FINE, e.toString());
+
+				LOGGER.log(Level.FINE, e.toString());
 			}
 		}
 	}
@@ -236,13 +237,13 @@ public class FuncionesFoto {
 			prepsInsertProduct = connection.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
 			prepsInsertProduct.execute();
 		} catch (Exception e) {
-			// e.printStackTrace();
+
 			if (e instanceof SQLIntegrityConstraintViolationException) {
 				String insertSql = "DELETE FROM megusta WHERE fotoid=" + fotoId + "  and idusuario= " + usuario + ";";
-				//if (statement != null) {
-					prepsInsertProduct = connection.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
-					prepsInsertProduct.execute();
-				//}
+
+				prepsInsertProduct = connection.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
+				prepsInsertProduct.execute();
+
 			}
 		} finally {
 			// Close the connections after the data has been handled.
@@ -252,9 +253,7 @@ public class FuncionesFoto {
 				} catch (Exception e) {
 				}
 
-			
-					resultSet.close();
-			
+			resultSet.close();
 
 			try {
 				statement.close();
@@ -268,15 +267,6 @@ public class FuncionesFoto {
 
 		}
 	}
-
-	/*
-	 * public static ArrayList<BufferedImage> getFotosSeguidos(int idUsuario) {
-	 * 
-	 * ArrayList<BufferedImage> resultado = new ArrayList<BufferedImage>();
-	 * ArrayList<Integer> seguidor=new ArrayList<Integer>();
-	 * seguidor=FuncionesSeguidor.getSeguidos(idUsuario); for(int i : seguidor) {
-	 * resultado.addAll(getFotosUsuario(i)); } return resultado; }
-	 */
 
 	static List<Foto> obtenerPopulares() {
 		Connection connection = null;
@@ -293,19 +283,17 @@ public class FuncionesFoto {
 				Blob blob = resultSet.getBlob("foto");
 				InputStream stream = blob.getBinaryStream(1, blob.length());
 				BufferedImage image = ImageIO.read(stream);
-				/* resultado.add(image); */
 				System.out.println(resultSet.getInt("fotoid"));
 				System.out.println(resultSet.getString("descripcion"));
 				System.out.println(resultSet.getString("autor"));
 				System.out.println(resultSet.getString("retoId"));
 				System.out.println("-------------------------------");
-				// System.out.println(resultSet.getString("foto"));
-				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt("retoid"), image,
+				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt(retoId), image,
 						resultSet.getInt("autor")));
 
 			}
 		} catch (Exception e) {
-			LOGGER.log( Level.FINE, e.toString());
+			LOGGER.log(Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
