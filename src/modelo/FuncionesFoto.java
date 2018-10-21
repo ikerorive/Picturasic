@@ -20,6 +20,9 @@ import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.imageio.ImageIO;
 import picturazic1.DBManager;
 
@@ -28,6 +31,7 @@ import picturazic1.DBManager;
  * @author HW
  */
 public class FuncionesFoto {
+	private static final Logger LOGGER = Logger.getLogger( "FuncionesFoto" );
 	public static List<Foto> getFotosUsuario(int idUsuario) {
 
 		Connection connection = null;
@@ -53,10 +57,10 @@ public class FuncionesFoto {
 				// System.out.println(resultSet.getString("foto"));
 				resultado.add(new Foto(resultSet.getInt("fotoid"), resultSet.getInt("retoid"), image,
 						resultSet.getInt("autor")));
-
+ 
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.log( Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
@@ -107,7 +111,7 @@ public class FuncionesFoto {
 
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.log( Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
@@ -148,7 +152,7 @@ public class FuncionesFoto {
 
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.log( Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
@@ -205,7 +209,7 @@ public class FuncionesFoto {
 				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				LOGGER.log( Level.FINE, e.toString());
 			}
 			try {
 				if (inputStream != null) {
@@ -213,7 +217,7 @@ public class FuncionesFoto {
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				LOGGER.log( Level.FINE, e.toString());
 			}
 		}
 	}
@@ -301,7 +305,7 @@ public class FuncionesFoto {
 
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.log( Level.FINE, e.toString());
 		} finally {
 			// Close the connections after the data has been handled.
 			if (resultSet != null)
